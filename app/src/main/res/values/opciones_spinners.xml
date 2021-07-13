@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_transmisiones" >
+        <item> </item>
+        <item>Automatico</item>
+        <item>Estandar</item>
+    </string-array>
+
+    <string-array name="combo_estados" >
+        <item> </item>
+        <item>Nuevo</item>
+        <item>Semi-nuevo</item>
+    </string-array>
+
+    <string-array name="combo_historial_crediticio">
+        <item> </item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Negativo</item>
+        <item>Sin antecedentes</item>
+        <item>Por revisar</item>
+    </string-array>
+
+    <string-array name="combo_actividad" >
+        <item> </item>
+        <item>Formal</item>
+        <item>Informal</item>
+        <item>Chofer</item>
+        <item>Sin demostracion de ingresos</item>
+    </string-array>
+
+    <string-array name="combo_etapa" >
+        <item> </item>
+        <item>Prospeccion</item>
+        <item>Por determinar cita</item>
+        <item>En seguimiento</item>
+        <item>Llenado de solicitud</item>
+    </string-array>
+
+    <string-array name="combo_financiamiento" >
+        <item> </item>
+        <item>Autofinanciamiento</item>
+        <item>Financiamiento tradicional</item>
+        <item>Arrendamiento financiero</item>
+        <item>Arrendamiento puro</item>
+        <item>Promocion</item>
+    </string-array>
+
+</resources>

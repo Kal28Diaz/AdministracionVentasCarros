@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalapp_axel_kaleb">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/miniatura"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/miniatura"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ActividadListaVehiculos"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+
+        <activity
+            android:name=".PagerVehiculos"
+            android:parentActivityName=".ActividadListaVehiculos"></activity>
+        <activity android:name=".ActividadCliente"></activity>
+        <activity
+            android:name=".ActividadTramite"></activity>
+        <activity android:name=".ActividadListaTramites"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ActividadListaNotas"></activity>
+        <activity android:name=".PagerNotas"></activity>
+        <activity android:name=".ActividadListaCitas"></activity>
+        <activity android:name=".PagerCitas"></activity>
+        <activity android:name=".ActividadListaReporte"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ActividadReporte"
+            android:parentActivityName=".ActividadListaReporte"></activity>
+    </application>
+
+</manifest>

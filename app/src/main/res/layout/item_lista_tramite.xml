@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/placa2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_nombre_prospecto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/lista_tramites_nombre"
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/item_fecha_prospecto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/vehiculo_año"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/item_etapa_tramite"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="@string/lista_tramites_etapa"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

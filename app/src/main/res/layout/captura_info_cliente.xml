@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/boton_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/cliente_etiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="@string/etiqueta_cliente"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/cliente_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/etiqueta_nombre_cliente"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/cliente_apellido_paterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/etiqueta_apellido_paterno_cliente"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/cliente_apellido_materno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/etiqueta_apellido_materno_cliente"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cellphone1"
+            />
+        <EditText
+            android:id="@+id/cliente_celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"
+            android:hint="@string/etiqueta_celular_cliente"
+            android:textColor="@android:color/background_dark"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/cliente_actividad_laboral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/etiqueta_actividad_laboral"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_historial_crediticio"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_historial_crediticio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cliente_historial_crediticio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/cliente_comprobante_ingresos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/etiqueta_comprobante_ingresos"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dolar"
+            />
+        <EditText
+            android:id="@+id/cliente_enganche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"
+            android:hint="@string/etiqueta_enganche"
+            android:textColor="@android:color/background_dark"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cliente_fecha_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/etiqueta_fecha_contacto" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/boton_editar_info_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/editar_info_cliente"
+            />
+
+        <Button
+            android:id="@+id/boton_terminar_edicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/etiqueta_terminar_edicion"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/boton_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/etiqueta_siguiente" />
+    </RelativeLayout>
+
+</LinearLayout>
